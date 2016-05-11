@@ -20,6 +20,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBOutlet var statusLabel: UILabel!
+    @IBAction func loginSelected(sender: AnyObject) {
+        if statusLabel.hidden == true {
+            statusLabel.hidden = false
+        } else {
+            statusLabel.hidden = true
+        }
+    }
 
 }
 

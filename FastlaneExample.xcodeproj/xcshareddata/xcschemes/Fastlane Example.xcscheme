@@ -42,8 +42,8 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1AF555151CE3690F003509E2"
-               BuildableName = "FastlaneExample.xctest"
+               BlueprintIdentifier = "1A6909821D13653B005E4501"
+               BuildableName = "FastlaneExampleUITests.xctest"
                BlueprintName = "FastlaneExampleUITests"
                ReferencedContainer = "container:FastlaneExample.xcodeproj">
             </BuildableReference>

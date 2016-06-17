@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eKw-5D-0Y4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eKw-5D-0Y4">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="iQN-yY-fCy">
             <objects>
-                <viewController id="eKw-5D-0Y4" customClass="ViewController" customModule="Fastlane_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eKw-5D-0Y4" customClass="ViewController" customModule="FastlaneExample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uo4-IC-9AL"/>
                         <viewControllerLayoutGuide type="bottom" id="R9w-cs-YCY"/>
@@ -44,6 +44,7 @@
                                                     </label>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JKq-ov-yL1">
                                                         <rect key="frame" x="86" y="0.0" width="474" height="30"/>
+                                                        <accessibility key="accessibilityConfiguration" label="userName"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
@@ -60,6 +61,7 @@
                                                     </label>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2mB-pR-1WP">
                                                         <rect key="frame" x="86" y="0.0" width="474" height="30"/>
+                                                        <accessibility key="accessibilityConfiguration" label="password"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
@@ -72,6 +74,7 @@
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBK-6d-I8c">
                                         <rect key="frame" x="0.0" y="530" width="560" height="30"/>
+                                        <accessibility key="accessibilityConfiguration" label="login"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="38" id="z4B-pd-KcL"/>
                                         </constraints>
@@ -89,6 +92,9 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration" label="loginView">
+                            <bool key="isElement" value="NO"/>
+                        </accessibility>
                         <constraints>
                             <constraint firstItem="Tja-nn-2B5" firstAttribute="top" secondItem="uo4-IC-9AL" secondAttribute="bottom" id="bkH-cb-HIw"/>
                             <constraint firstItem="Tja-nn-2B5" firstAttribute="centerY" secondItem="gG6-Ar-uSt" secondAttribute="centerY" id="jNr-TG-Xsw"/>

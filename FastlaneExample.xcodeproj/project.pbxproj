@@ -486,6 +486,7 @@
 				1A69099A1D136562005E4501 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1AF554F21CE3690F003509E2 /* Build configuration list for PBXProject "FastlaneExample" */ = {
 			isa = XCConfigurationList;

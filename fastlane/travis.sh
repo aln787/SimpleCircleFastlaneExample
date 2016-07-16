@@ -1,6 +1,6 @@
 #!/bin/sh
 
-fastlane test
+fastlane ios test
 exit $?
 
 #if [[ "$TRAVIS_PULL_REQUEST" != "false" ]]; then

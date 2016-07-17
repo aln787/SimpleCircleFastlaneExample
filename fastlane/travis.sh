@@ -1,6 +1,7 @@
 #!/bin/sh
-bundle install
-if [ -z $TRAVIS ]; then require 'bundler/setup'; fi
+bundle install --system
+#if [ -z $TRAVIS ]; then require 'bundler/setup'; fi
+require 'bundler/setup'
 #gem install fastlane
 fastlane ios test
 exit $?

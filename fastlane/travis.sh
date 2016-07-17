@@ -1,5 +1,5 @@
 #!/bin/sh
-
+bundle install
 fastlane ios test
 exit $?
 

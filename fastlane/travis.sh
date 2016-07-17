@@ -1,12 +1,14 @@
 #!/bin/sh
+
 bundle install --system
-#if [ -z $TRAVIS ]; then require 'bundler/setup'; fi
-require 'bundler/setup'
-#gem install fastlane
+if [ -z $TRAVIS ]; then require 'bundler/setup'; fi
 fastlane ios test
 exit $?
 
-#if [[ "$TRAVIS_PULL_REQUEST" != "false" ]]; then
+#Travis environment vars: https://docs.travis-ci.com/user/osx-ci-environment/#Environment-variables
+
+# Optional conditional logic based on Travis Env vars
+#if [[ "$TRAVIS_BRANCH" == "test" ]]; then
 #  fastlane test
 #  exit $?
 #fi

@@ -1,5 +1,7 @@
 #!/bin/sh
 bundle install
+echo $TRAVIS
+if [ -z $TRAVIS ]; then export PATH="./vendor/bundle:$PATH"
 fastlane ios test
 exit $?
 

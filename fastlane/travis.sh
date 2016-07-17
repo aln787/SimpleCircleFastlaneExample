@@ -2,6 +2,7 @@
 bundle install
 echo $TRAVIS
 if [ -z $TRAVIS ]; then export PATH="./vendor/bundle:$PATH"; fi
+gem install fastlane
 fastlane ios test
 exit $?
 
